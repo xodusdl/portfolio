@@ -30,8 +30,12 @@ ul.skill_list{
     align-items: center;
 }
 ul.skill_list li{
-    width: auto;
+    width: 20px;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 ul.skill_list li img{
     width: 100%;
