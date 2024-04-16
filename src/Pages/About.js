@@ -3,6 +3,10 @@ import Title from '../Components/Title'
 import Style from './css/About.module.css'
 
 export default function About() {
+  const openTab =(url) => {
+    window.open(url, "_blank", "noopener, noreferrer")
+  }
+
   return (
     <>
     <Title title='About'/>
@@ -11,6 +15,7 @@ export default function About() {
         <p className={Style.info}>김태연을 소개합니다.</p>
         <p className={Style.name}>Kim Taeyeon</p>
         <p className={Style.info}>tae2016@naver.com<br/>010 6613 8274</p>
+        <img src='/images/github.svg' alt='github' onClick={()=> openTab ("https://github.com/xodusdl")}/>
       </div>
       <ul className={Style.right}>
         <li>

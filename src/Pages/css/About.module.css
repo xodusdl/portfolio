@@ -14,6 +14,14 @@ div.left{
     width: 47.22%;
     height: auto;
 }
+div.left img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+div.left img:hover{
+    filter: invert(33%) sepia(87%) saturate(1207%) hue-rotate(333deg) brightness(96%) contrast(85%);
+}
 p.info{
     font: normal 16px/26px "Noto Sans KR";
 }
