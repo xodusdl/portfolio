@@ -15,7 +15,7 @@ div.left{
     height: auto;
 }
 p.info{
-    font: normal 16px/24px "Noto Sans KR";
+    font: normal 16px/26px "Noto Sans KR";
 }
 p.name{
     font: normal 30px/40px "Song Myung";
@@ -31,7 +31,7 @@ ul.right li{
     margin-bottom: 30px;
 }
 div.title{
-    font: bold 20px/38px "Noto Sans KR";
+    font: bold 20px/26px "Noto Sans KR";
     color: #E04242;
 }
 div.date{

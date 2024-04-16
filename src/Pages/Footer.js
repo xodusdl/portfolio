@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className={Style.footer_wrap}>
       <footer className={Style.footer}>
-        <p className={Style.title}>Portfolio 2024</p>
+        <div className={Style.title}>Portfolio 2024</div>
         <ul className={Style.skill_list}>
           <li><img src='/images/html.svg' alt='react'/></li>
           <li><img src='/images/css.svg' alt='react'/></li>

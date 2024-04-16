@@ -6,21 +6,23 @@ footer.footer{
     width: 1200px;
     height: 100%;
     margin: 0px auto;
-    position: relative;
-    top: 0px;
-    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    box-sizing: border-box;
 }
-p.title{
-    font: normal 16px/100px "Song Myung";
-    text-align: center;
+div.title{
+    width: auto;
+    height: 20px;
+    font: normal 16px/20px "Song Myung";
     color: #E04242;
 }
 ul.skill_list{
-    width: 200px;
+    width: 140px;
     height: 20px;
-    position: absolute;
-    right: 24px;
-    bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -39,15 +41,5 @@ ul.skill_list li img{
 @media screen and (max-width: 1200px){
     footer.footer{
         width: 100%;
-    }
-}
-@media screen and (max-width: 768px){
-    div.footer_wrap{
-        height: 200px;
-    }
-    ul.skill_list{
-        position: absolute;
-        right: 50%;
-        margin-right: -100px;
     }
 }

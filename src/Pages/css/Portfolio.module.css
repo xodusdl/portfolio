@@ -44,16 +44,14 @@ div.text{
     /*214px*/
     height: 100%;
     float: left;
-    position: relative;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 p.text_title{
     width: 100%;
     font: bold 20px/30px "Noto Sans KR";
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 p.text_title span{
     font: normal 12px/30px "Noto Sans KR";
@@ -62,26 +60,20 @@ p.text_title span{
 p.text_info{
     width: 100%;
     font: normal 12px/20px "Noto Sans KR";
-    position: absolute;
-    top: 70px;
-    left: 0;
 }
 p.text_text{
     width: 100%;
     font: normal 14px/20px "Noto Sans KR";
-    position: absolute;
-    top: 130px;
-    left: 0;
 }
 div.link_box{
     width: 100%;
     height: 30px;
     font: bold 14px/30px "Noto Sans KR";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
     border-top: solid 1px #000;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative;
+    top:0;
+    left: 0;
 }
 div.link_box:hover{
     color: #E04242;
