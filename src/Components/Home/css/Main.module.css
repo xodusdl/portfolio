@@ -1,0 +1,87 @@
+div#main_wrap{
+    width: 100%;
+    height: 100vh;
+    min-width: 768px;
+}
+section#main{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+p.logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font: normal 30px "Noto Sans KR";
+    font-weight: 800;
+    color: #E04242;
+}
+p.text{
+    height: 30px;
+    font: normal 14px/30px "Noto Sans KR";
+    position: absolute;
+    left: 30px;
+    bottom: 204px;
+    color: #7c7c7c;
+}
+p.text_bottom{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font: normal 120px/174px "Noto Sans KR";
+    font-weight: 800;
+}
+div.arrow{
+    width: 60px;
+    height: 174px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+div.arrow img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* background: red; */
+    /* opacity: 0; */
+    /* animation: scroll 2s ease-out infinite; */
+    animation: horizontal 0.7s ease-out infinite;
+}
+@keyframes scroll{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .5;
+        transform: translateY(5px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+@keyframes horizontal{
+    0%{
+        margin-top: 11px;
+    }
+    50%{
+        margin-top: 20px;
+    }
+    100%{
+        margin-top: 11px;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    section#main{
+        width: 100%;
+    }
+}

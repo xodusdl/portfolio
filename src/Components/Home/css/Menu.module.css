@@ -1,0 +1,78 @@
+div#menu_wrap{
+    width: 100%;
+    height: 100vh;
+    min-height: 320px;
+    min-width: 768px;
+}
+section#menu{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.title_box{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font: normal 30px "Noto Sans KR";
+    font-weight: 800;
+}
+div.menu_box{
+    width: 50%;
+    height: 100%;
+}
+ul.menu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* ul.menu_list li{
+    background: blue;
+} */
+ul.menu_list li a{
+    font: italic 110px "Noto Sans KR";
+    font-weight: 500;
+    color: #7c7c7c;
+    cursor: pointer;
+    margin-left: 30px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: .3s ease-out;
+}
+ul.menu_list li a:hover{
+    color: #E04242;
+    margin-left: 60px;
+}
+ul.menu_list li a::after{
+    width: 0px;
+    height: 30px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 110%;
+    bottom: 30px;
+    background: url(/public/images/linkto.svg) no-repeat center;
+    object-fit: contain;
+    transition: .3s ease-out;
+    
+}
+ul.menu_list li a:hover::after{
+    width: 77px;
+}
+
+@media screen and (max-width:1200px){
+    section#menu{
+        width: 100%;
+    }
+}
+/* @media screen and (max-width:768px){
+    section#menu{
+        background: pink;
+    }
+} */

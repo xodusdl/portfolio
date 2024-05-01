@@ -2,8 +2,7 @@ import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './Pages/Root'
 import NotFound from './Pages/NotFound'
-import Portfolio from './Pages/Portfolio'
-import About from './Pages/About'
+import Home from './Pages/Home'
 
 export default function App() {
 
@@ -14,8 +13,7 @@ export default function App() {
         element:<Root/>,
         errorElement:<NotFound/>,
         children:[
-          {index:true, element:<Portfolio/>},
-          {path:'/about', element:<About/>}
+          {index:true, element:<Home/>}
         ]
       }
     ]
