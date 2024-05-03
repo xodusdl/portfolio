@@ -36,7 +36,7 @@ export default function WebList() {
                 <p className={Style.info_text}>동물의 입양, 유기 등의 현황을 고취시키기 위한 입양 홍보 프로젝트를 제작했습니다.</p>
               </div>
               <div className={Style.img}>
-                <img src='./images/02.jpg' alt='dogddogcat'/>
+                <img src='./images/dog.jpg' alt='dogddogcat'/>
                 <div className={Style.link_box} onClick={()=> openTab ("http://adoption.dothome.co.kr/")}><p>Link to</p></div>
               </div>
             </li>
@@ -47,7 +47,7 @@ export default function WebList() {
                 <p className={Style.info_text}>자전거 대여 사이트를 주제로 제작한 React 프로젝트입니다.</p>
               </div>
               <div className={Style.img}>
-                <img src='./images/03.jpg' alt='seoulbicycle'/>
+                <img src='./images/seoul.jpg' alt='seoulbicycle'/>
                 <div className={Style.link_box} onClick={()=> openTab ("https://rentalbicycle.netlify.app/")}><p>Link to</p></div>
               </div>
             </li>
