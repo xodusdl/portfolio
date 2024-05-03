@@ -8,9 +8,9 @@ section#menu{
     width: 1200px;
     height: 100%;
     margin: 0px auto;
-    position: relative;
+    /* position: relative;
     left: 0px;
-    top: 0px;
+    top: 0px; */
 }
 div.title_box{
     position: absolute;

@@ -19,21 +19,19 @@ export default function WebList() {
         <div className={Style.list_box}>
           <ul className={Style.portfolio_list}>
             <li>
-              <div className={Style.portfolio}>
-                <p className={Style.info_title}>Scoop (개인)
-                {/* <span onClick={()=> openTab ("")}><FontAwesomeIcon icon={faFigma} /></span> */}
-                </p>
+              <div className={Style.portfolio_text_box}>
+                <p className={Style.info_title}>scoop (개인)</p>
                 <p className={Style.keyword}>웹접근성, 적응형, html, css, javascript<br/>2023.10.30 ~ 2023.11.20</p>
                 <p className={Style.info_text}>‘아이스크림’을 주제로 홈페이지를 제작했습니다.</p>
               </div>
               <div className={Style.img}>
-                <img src='./images/01.jpg' alt='scoop'/>
+                <img src='./images/scoop.jpg' alt='scoop'/>
                 <div className={Style.link_box} onClick={()=> openTab ("http://scoop.dothome.co.kr/")}><p>Link to</p></div>
               </div>
             </li>
             <li>
-              <div className={Style.portfolio}>
-                <p className={Style.info_title}>Ddogdogcat (3인)<span onClick={()=> openTab ("https://www.figma.com/file/se6lGvan0n7ZEdt6KC8avE/Untitled?type=design&node-id=1%3A2&mode=design&t=hkJClqmiRWnqrOki-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
+              <div className={Style.portfolio_text_box}>
+                <p className={Style.info_title}>ddogcat (3인)<span onClick={()=> openTab ("https://www.figma.com/file/se6lGvan0n7ZEdt6KC8avE/Untitled?type=design&node-id=1%3A2&mode=design&t=hkJClqmiRWnqrOki-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
                 <p className={Style.keyword}>html, css, javascript<br/>2023.12.15 ~ 2024.01.03</p>
                 <p className={Style.info_text}>동물의 입양, 유기 등의 현황을 고취시키기 위한 입양 홍보 프로젝트를 제작했습니다.</p>
               </div>
@@ -43,10 +41,8 @@ export default function WebList() {
               </div>
             </li>
             <li>
-              <div className={Style.portfolio}>
-                <p className={Style.info_title}>Seoulbicycle (개인)
-                {/* <span onClick={()=> openTab ("")}><FontAwesomeIcon icon={faFigma} /></span> */}
-                </p>
+              <div className={Style.portfolio_text_box}>
+              <p className={Style.info_title}>seoulbicycle (개인)</p>
                 <p className={Style.keyword}>적응형, React<br/>2024.02.12 ~ 2024.02.29</p>
                 <p className={Style.info_text}>자전거 대여 사이트를 주제로 제작한 React 프로젝트입니다.</p>
               </div>
@@ -56,14 +52,25 @@ export default function WebList() {
               </div>
             </li>
             <li>
-              <div className={Style.portfolio}>
-                <p className={Style.info_title}>Zarakids (개인)<span onClick={()=> openTab ("https://www.figma.com/file/zha4Wy1xndQyJRqYMBukHT/zarakids_Figma?type=design&node-id=0%3A1&mode=design&t=qZNu4iDS8ReCJOKA-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
+              <div className={Style.portfolio_text_box}>
+                <p className={Style.info_title}>zarakids (개인)<span onClick={()=> openTab ("https://www.figma.com/file/zha4Wy1xndQyJRqYMBukHT/zarakids_Figma?type=design&node-id=0%3A1&mode=design&t=qZNu4iDS8ReCJOKA-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
                 <p className={Style.keyword}>반응형, React<br/>2024.03.01 ~ 2024.03.15</p>
                 <p className={Style.info_text}>의류 브랜드 ZARA 홈페이지를 React 활용하여 리뉴얼하였습니다.</p>
               </div>
               <div className={Style.img}>
-                <img src='./images/04.jpg' alt='zarakids'/>
+                <img src='./images/zara.jpg' alt='zarakids'/>
                 <div className={Style.link_box} onClick={()=> openTab ("https://zarakidsclothes.netlify.app/")}><p>Link to</p></div>
+              </div>
+            </li>
+            <li>
+              <div className={Style.portfolio_text_box}>
+                <p className={Style.info_title}>Glossier (개인)</p>
+                <p className={Style.keyword}>반응형, html, css<br/>2024.04.29 ~ 2024.05.03</p>
+                <p className={Style.info_text}>Glossier 홈페이지를 html, css를 활용하여 제작하였습니다.</p>
+              </div>
+              <div className={Style.img}>
+                <img src='./images/05.jpg' alt='glossier'/>
+                <div className={Style.link_box} onClick={()=> openTab ("https://youlookgood.netlify.app/")}><p>Link to</p></div>
               </div>
             </li>
           </ul>
@@ -75,8 +82,6 @@ export default function WebList() {
           <li><FontAwesomeIcon icon={faReact} /></li>
           <li><FontAwesomeIcon icon={faGit} /></li>
         </ul>
-
-
       </section>
     </div>
   )
