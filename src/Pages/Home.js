@@ -1,14 +1,14 @@
 import React from 'react'
 import Main from '../Components/Home/Main'
 import Info from '../Components/Home/Info'
-import WebList from '../Components/Home/WebList'
+import Menu from '../Components/Home/Menu'
 
 export default function Home() {
   return (
     <>
     <Main/>
     <Info/>
-    <WebList/>
+    <Menu/>
     </>
   )
 }

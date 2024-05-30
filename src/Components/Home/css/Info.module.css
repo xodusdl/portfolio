@@ -1,8 +1,8 @@
 div#info_wrap{
     width: 100%;
     height: 100vh;
+    min-height: 500px;
     min-width: 768px;
-    min-height: 890px;
 }
 section#info{
     width: 1200px;
@@ -31,8 +31,7 @@ div#info_box{
 }
 div.box{
     width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 p.box_text{
     font: italic 24px "Noto Sans KR";
