@@ -34,9 +34,9 @@ export default function WebList() {
             </li>
             <li>
               <div className={Style.portfolio_text_box}>
-                <p className={Style.info_title}>ddogcat (3인)<span onClick={()=> openTab ("https://www.figma.com/file/se6lGvan0n7ZEdt6KC8avE/Untitled?type=design&node-id=1%3A2&mode=design&t=hkJClqmiRWnqrOki-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
+                <p className={Style.info_title}>ddogdogcat (3인)<span onClick={()=> openTab ("https://www.figma.com/file/se6lGvan0n7ZEdt6KC8avE/Untitled?type=design&node-id=1%3A2&mode=design&t=hkJClqmiRWnqrOki-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
                 <p className={Style.keyword}>html, css, javascript<br/>2023.12.15 ~ 2024.01.03</p>
-                <p className={Style.info_text}>동물의 입양, 유기 등의 현황을 고취시키기 위한 입양 홍보 프로젝트를 제작했습니다.</p>
+                <p className={Style.info_text}>동물의 입양, 유기 등의 현황을 고취시키기 위한 입양 홍보 프로젝트를 제작했습니다. 저는 팀장으로 코드제작과 레이아웃 전체 업무에 참여하였습니다.</p>
               </div>
               <div className={Style.img}>
                 <img src='./images/dog.jpg' alt='dogddogcat'/>
@@ -68,12 +68,23 @@ export default function WebList() {
             <li>
               <div className={Style.portfolio_text_box}>
                 <p className={Style.info_title}>Glossier (개인)</p>
-                <p className={Style.keyword}>반응형, html, css<br/>2024.04.29 ~ 2024.05.03</p>
+                <p className={Style.keyword}>html, css<br/>2024.04.29 ~ 2024.05.03</p>
                 <p className={Style.info_text}>Glossier 홈페이지를 html, css를 활용하여 제작하였습니다.</p>
               </div>
               <div className={Style.img}>
                 <img src='./images/glossier.jpg' alt='glossier'/>
                 <div className={Style.link_box} onClick={()=> openTab ("https://youlookgood.netlify.app/")}><p>Link to</p></div>
+              </div>
+            </li>
+            <li>
+              <div className={Style.portfolio_text_box}>
+                <p className={Style.info_title}>seniorcorp (2인)</p>
+                <p className={Style.keyword}>반응형, html, css<br/>2024.05.20 ~ 2024.05.28</p>
+                <p className={Style.info_text}>고령화 사회에 시니어 세대를 위한 서비스를 제공하는 프로젝트를 제작했습니다. 저는 html과 css를 맡아 제작하였습니다.</p>
+              </div>
+              <div className={Style.img}>
+                <img src='./images/seniorcorp.png' alt='seniorcorp'/>
+                <div className={Style.link_box} onClick={()=> openTab ("https://seniorcorp.co.kr/")}><p>Link to</p></div>
               </div>
             </li>
           </ul>
