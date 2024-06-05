@@ -16,7 +16,7 @@ div.title_box{
     position: absolute;
     right: 30px;
     top: 30px;
-    font: normal 30px "Noto Sans KR";
+    font: normal 30px "Raleway";
     font-weight: 800;
 }
 div.menu_box{
@@ -24,6 +24,7 @@ div.menu_box{
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
+    /* background: red; */
 }
 ul.menu_list{
     width: 100%;
@@ -35,7 +36,7 @@ ul.menu_list{
     align-items: start;
 }
 ul.menu_list li a{
-    font: italic 110px "Noto Sans KR";
+    font: normal 110px "Raleway";
     font-weight: 500;
     color: #7c7c7c;
     cursor: pointer;
@@ -46,24 +47,22 @@ ul.menu_list li a{
     transition: .3s ease-out;
 }
 ul.menu_list li a:hover{
-    color: #E04242;
+    color: #000;
     margin-left: 60px;
 }
 ul.menu_list li a::after{
     width: 0px;
-    height: 30px;
+    height: 6px;
     content: "";
     display: block;
     position: absolute;
+    background: #000;
     left: 110%;
     bottom: 30px;
-    background: url(/public/images/linkto.svg) no-repeat center;
-    object-fit: contain;
     transition: .3s ease-out;
-    
 }
 ul.menu_list li a:hover::after{
-    width: 77px;
+    width: 200px;
 }
 
 @media screen and (max-width:1200px){

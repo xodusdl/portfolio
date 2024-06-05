@@ -16,7 +16,7 @@ div.title_box{
     position: absolute;
     left: 30px;
     top: 30px;
-    font: normal 30px "Noto Sans KR";
+    font: normal 30px "Raleway";
     font-weight: 800;
 }
 div#info_box{
@@ -34,7 +34,7 @@ div.box{
     margin-bottom: 30px;
 }
 p.box_text{
-    font: italic 24px "Noto Sans KR";
+    font: italic 24px "Raleway";
     font-weight: 600;
     margin-bottom: 30px;
 }

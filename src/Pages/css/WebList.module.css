@@ -11,9 +11,8 @@ section#list{
 div.title_box{
     text-align: right;
     padding: 30px;
-    font: normal 30px "Noto Sans KR";
+    font: normal 30px "Raleway";
     font-weight: 800;
-    color: #E04242;
 }
 div.list_box{
     width: 100%;
@@ -47,14 +46,14 @@ p.info_title span{
     height: 30px;
     border-radius: 15px;
     color: #fff;
-    background: #7c7c7c;;
+    background: #000;
     text-align: center;
     cursor: pointer;
     float: right;
 }
 p.info_title span:hover{
     color: #fff;
-    background: #E04242;
+    background: #7c7c7c;
     animation: rotate 1s infinite;
 }
 @keyframes rotate{
