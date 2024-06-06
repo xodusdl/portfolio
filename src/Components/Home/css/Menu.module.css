@@ -20,11 +20,10 @@ div.title_box{
     font-weight: 800;
 }
 div.menu_box{
-    width: 50%;
+    width: 700px;
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
-    /* background: red; */
 }
 ul.menu_list{
     width: 100%;
@@ -41,28 +40,17 @@ ul.menu_list li a{
     color: #7c7c7c;
     cursor: pointer;
     margin-left: 30px;
-    position: relative;
-    left: 0px;
-    top: 0px;
     transition: .3s ease-out;
+}
+ul.menu_list li a span{
+    opacity: 0;
 }
 ul.menu_list li a:hover{
     color: #000;
     margin-left: 60px;
 }
-ul.menu_list li a::after{
-    width: 0px;
-    height: 6px;
-    content: "";
-    display: block;
-    position: absolute;
-    background: #000;
-    left: 110%;
-    bottom: 30px;
-    transition: .3s ease-out;
-}
-ul.menu_list li a:hover::after{
-    width: 200px;
+ul.menu_list li a:hover span{
+    opacity: 1;
 }
 
 @media screen and (max-width:1200px){

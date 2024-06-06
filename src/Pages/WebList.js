@@ -7,12 +7,15 @@ import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faGit } from "@fortawesome/free-brands-svg-icons";
+import useList from '../Hook/useList';
 
 export default function WebList() {
   const openTab =(url) => {
     window.open(url, "_blank", "noopener, noreferrer")
   }
   window.scrollTo(0,0)
+
+  const [ allList ] = useList()
 
 
   return (
@@ -21,28 +24,31 @@ export default function WebList() {
         <div className={Style.title_box}>WEB</div>
         <div className={Style.list_box}>
           <ul className={Style.portfolio_list}>
-            <li>
-              <div className={Style.portfolio_text_box}>
-                <p className={Style.info_title}>scoop (개인)</p>
-                <p className={Style.keyword}>웹접근성, 적응형, html, css, javascript<br/>2023.10.30 ~ 2023.11.20</p>
-                <p className={Style.info_text}>‘아이스크림’을 주제로 홈페이지를 제작했습니다.</p>
-              </div>
-              <div className={Style.img}>
-                <img src='./images/scoop.jpg' alt='scoop'/>
-                <div className={Style.link_box} onClick={()=> openTab ("http://scoop.dothome.co.kr/")}><p>Link to</p></div>
-              </div>
-            </li>
-            <li>
-              <div className={Style.portfolio_text_box}>
-                <p className={Style.info_title}>ddogdogcat (3인)<span onClick={()=> openTab ("https://www.figma.com/file/se6lGvan0n7ZEdt6KC8avE/Untitled?type=design&node-id=1%3A2&mode=design&t=hkJClqmiRWnqrOki-1")}><FontAwesomeIcon icon={faFigma} /></span></p>
-                <p className={Style.keyword}>html, css, javascript<br/>2023.12.15 ~ 2024.01.03</p>
-                <p className={Style.info_text}>동물의 입양, 유기 등의 현황을 고취시키기 위한 입양 홍보 프로젝트를 제작했습니다. 저는 팀장으로 코드제작과 레이아웃 전체 업무에 참여하였습니다.</p>
-              </div>
-              <div className={Style.img}>
-                <img src='./images/dog.jpg' alt='dogddogcat'/>
-                <div className={Style.link_box} onClick={()=> openTab ("http://adoption.dothome.co.kr/")}><p>Link to</p></div>
-              </div>
-            </li>
+            {
+              allList.map((item)=>{
+                return(
+                  <li>
+                    <div className={Style.portfolio_text_box}>
+                      <p className={Style.info_title}>{item.name} ({item.num})
+                      {
+                        item.figma ? <span onClick={()=> openTab (item.figma)}><FontAwesomeIcon icon={faFigma} /></span> : ''
+                      }
+                      </p>
+                      <p className={Style.keyword}>{item.keyword_skill}<br/>{item.keyword_date}</p>
+                      <p className={Style.info_text}>{item.info}</p>
+                    </div>
+                    <div className={Style.img}>
+                      <img src={item.image} alt={item.name}/>
+                      <div className={Style.link_box} onClick={()=> openTab (item.link)}><p>Link to</p></div>
+                    </div>
+                  </li>
+                )
+              })
+
+            }
+
+            {/* 
+
             <li>
               <div className={Style.portfolio_text_box}>
               <p className={Style.info_title}>seoulbicycle (개인)</p>
@@ -86,7 +92,7 @@ export default function WebList() {
                 <img src='./images/seniorcorp.png' alt='seniorcorp'/>
                 <div className={Style.link_box} onClick={()=> openTab ("https://seniorcorp.co.kr/")}><p>Link to</p></div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
         <ul className={Style.tool_list}>

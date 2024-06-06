@@ -9,8 +9,8 @@ export default function Menu() {
             <div className={Style.title_box}>MENU</div>
             <div className={Style.menu_box}>
                 <ul className={Style.menu_list}>
-                    <li><Link to={'/web'}>Web</Link></li>
-                    <li><Link to={'/gallery'}>Gallery</Link></li>
+                    <li><Link to={'/web'}>Web <span>&#8640;</span></Link></li>
+                    <li><Link to={'/gallery'}>Gallery <span>&#8640;</span></Link></li>
                 </ul>
             </div>
         </section>
