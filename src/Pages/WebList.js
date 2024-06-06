@@ -7,15 +7,16 @@ import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faGit } from "@fortawesome/free-brands-svg-icons";
-import useList from '../Hook/useList';
+import useProducts from '../Hook/useProducts';
 
 export default function WebList() {
+
+  const [allProducts] = useProducts()
+  
   const openTab =(url) => {
     window.open(url, "_blank", "noopener, noreferrer")
   }
   window.scrollTo(0,0)
-
-  const [ allList ] = useList()
 
   return (
     <div id={Style.web_wrap}>
@@ -24,7 +25,7 @@ export default function WebList() {
         <div className={Style.list_box}>
           <ul className={Style.portfolio_list}>
             {
-              allList.map((item)=>{
+              allProducts.map((item)=>{
                 return(
                   <li>
                     <div className={Style.portfolio_text_box}>
