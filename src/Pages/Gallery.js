@@ -26,15 +26,13 @@ export default function Gallery() {
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide><img src='./images/00.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/01.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/02.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/03.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/04.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/05.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/06.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/07.jpg' alt='images'/></SwiperSlide>
-          <SwiperSlide><img src='./images/08.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/1.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/2.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/3.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/4.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/5.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/6.jpg' alt='images'/></SwiperSlide>
+          <SwiperSlide><img src='./images/7.jpg' alt='images'/></SwiperSlide>
         </Swiper> 
       </section>
     </div>

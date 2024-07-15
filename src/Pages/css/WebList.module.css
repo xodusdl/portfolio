@@ -9,7 +9,7 @@ section#list{
     margin: 0px auto;
 }
 div.title_box{
-    text-align: right;
+    text-align: left;
     padding: 30px;
     font: normal 30px "Raleway";
     font-weight: 800;
